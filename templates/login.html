@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Axions: Login</title>
+    <link rel="stylesheet" type="text/css" href="/fonts"> <!-- Replace "path/to/cyberpunk-font-og.css" with the actual path to your font's CSS file or use a CDN link if available -->
+<style>
+    body {
+        background-image: url('https://axon-assets-cdn.razerzone.com/preview/f4f9242d1ff8319656d066d4ee4ff42e.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #00ff00; /* Cyberpunk-style green text color */
+        font-family: 'cyberpunk-font-og', 'Arial', sans-serif; /* Set the font family */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    h1, h2 {
+        font-size: 3rem;
+        font-family: 'Courier New', monospace; /* Update the font for the h1 and h2 elements */
+        text-shadow: 2px 2px 4px #000; /* Add a black outline to the text */
+        background: rgba(0, 0, 0, 0.5); /* Add a transparent black background */
+        color: #fff; /* Change text color to white for visibility */
+        padding: 10px; /* Add padding to create a box around the text */
+        border-radius: 5px; /* Round the corners of the box */
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        font-size: 1.5rem;
+        text-shadow: 2px 2px 4px #000; /* Add a black outline to the text */
+    }
+
+    a {
+        text-decoration: none;
+        color: #00ff00; /* Cyberpunk-style green text color */
+        font-family: 'cyberpunk-font-og', 'Courier New', monospace; /* Update the font for links */
+        text-shadow: 2px 2px 4px #000; /* Add a black outline to the text */
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid #00ff00; /* Cyberpunk-style green border color */
+        margin: 20px 0;
+    }
+</style>
+
+</head>
+<body>
+    <h1>Team Axions</h1>
+
+    {% if user_code %}
+    <ol>
+      <li>To sign in, type <b>{{ user_code }}</b> into
+        <a href='{{ auth_uri }}' target=_blank>{{ auth_uri }}</a>
+        to authenticate.
+      </li>
+      <li>And then <a href="{{ url_for('auth_response') }}">proceed</a>.</li>
+    </ol>
+    {% else %}
+    <ul><li><a href='{{ auth_uri }}'><h2>Sign In</h2></a></li></ul>
+    {% endif %}
+
+    {% if config.get("B2C_RESET_PASSWORD_AUTHORITY") %}
+    <a href="{{config.get('B2C_RESET_PASSWORD_AUTHORITY')}}?client_id={{config.get('CLIENT_ID')}}">Reset Password</a>
+    {% endif %}
+</body>
+</html>
