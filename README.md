@@ -1,4 +1,4 @@
-# axions-collabothon
+# TEAM AXIONS
 
 ![OpenShift](openshift.png)
 
