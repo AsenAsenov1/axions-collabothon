@@ -1,0 +1,43 @@
+<mxfile host="Electron" modified="2023-10-21T11:20:43.450Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="4A3ecBtaRR6nMDr8lhtg" version="21.6.8" type="device">
+  <diagram name="Page-1" id="zlGKribDC3WEBMQYlW1F">
+    <mxGraphModel dx="1114" dy="709" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="R2VfWVU5jhdkpsjYYUNA-11" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="138" width="370" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="R2VfWVU5jhdkpsjYYUNA-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.444;entryY=1.005;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="R2VfWVU5jhdkpsjYYUNA-2" target="R2VfWVU5jhdkpsjYYUNA-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R2VfWVU5jhdkpsjYYUNA-7" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="510" y="131" width="330" height="388" as="geometry" />
+        </mxCell>
+        <mxCell id="R2VfWVU5jhdkpsjYYUNA-2" value="Azure AD B2C" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/identity/Azure_AD_B2C.svg;" vertex="1" parent="1">
+          <mxGeometry x="310" y="280" width="69" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="R2VfWVU5jhdkpsjYYUNA-4" value="Federation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="R2VfWVU5jhdkpsjYYUNA-3" target="R2VfWVU5jhdkpsjYYUNA-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R2VfWVU5jhdkpsjYYUNA-3" value="Azure AD" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/identity/Azure_Active_Directory.svg;" vertex="1" parent="1">
+          <mxGeometry x="550" y="280" width="70" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="R2VfWVU5jhdkpsjYYUNA-5" value="Axions App" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/identity/App_Registrations.svg;" vertex="1" parent="1">
+          <mxGeometry x="316" y="50" width="63" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="R2VfWVU5jhdkpsjYYUNA-9" value="Vendor Environment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+          <mxGeometry x="600" y="120" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R2VfWVU5jhdkpsjYYUNA-10" value="MFA&lt;br&gt;Conditional Access Policies&lt;br&gt;Access Controls" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="660" y="280" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="R2VfWVU5jhdkpsjYYUNA-13" value="Axions B2C" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" vertex="1" parent="1">
+          <mxGeometry x="130" y="120" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R2VfWVU5jhdkpsjYYUNA-15" value="MFA Enforcement&lt;br&gt;Self Service Sign Up&lt;br&gt;Self Service Deletion&lt;br&gt;Account Deletion via RunBooks&lt;br&gt;Conditional Access&lt;br&gt;Use of oAuth 2.0&lt;br&gt;Authorization based on Claims&lt;br&gt;Full Control on Accounts and no impact on main Axions tenant" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" vertex="1" parent="1">
+          <mxGeometry x="100" y="220" width="170" height="200" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
